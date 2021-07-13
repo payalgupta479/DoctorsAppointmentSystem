@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(58, 222, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logomate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navborder {
+    border: .5px solid black;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.leftbar {
+    font-size: 18px;
+    width: 30%;
+}
+
+.leftbar img {
+    height: 80px;
+    width: 80px;
+}
+
+.rightbar {
+    margin-left: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightbar a {
+    font-size: 18px;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    height: 35px;
+    text-decoration: none;
+    color: bkack;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.rightbar a:hover {
+    transition-delay: 1s;
+    /* box-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 40px red; */
+    /* text-shadow: 0 0 50px red; */
+}
+
+.rightbar a span {
+    position: absolute;
+    display: block;
+}
+
+.rightbar a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, black);
+}
+
+.rightbar a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.rightbar a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, black);
+}
+
+.rightbar a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+}
+
+.topmain {
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.top1 h1 {
+    color: black;
+    letter-spacing: 4px;
+    background: white;
+    position: relative;
+    animation: text 3s;
+}
+
+@keyframes text {
+    0% {
+        color: black;
+    }
+    30% {
+        letter-spacing: 8px;
+    }
+    85% {
+        letter-spacing: 4px;
+    }
+}
+
+.main {
+    background-color: rgb(58, 222, 203);
+    width: 80%;
+    margin-left: 10%;
+}
+
+.bottom {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.left {
+    width: 25%;
+    padding-top: 20px;
+}
+
+.left .docimg {
+    height: 170px;
+    width: 150px;
+}
+
+.mdocimg {
+    display: flex;
+    justify-content: center;
+}
+
+.appointbtn {
+    display: flex;
+    justify-content: center;
+}
+
+.left button {
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: none;
+    border: 1.5px solid black;
+}
+
+.left button:hover {
+    transition: 0.4s;
+    color: white;
+    background-color: black;
+}
+
+.right {
+    width: 75%;
+    padding-top: 20px;
+}
+
+.right p {
+    font-size: 16px;
+}
+
+.right h3 {
+    margin-bottom: 4px;
+}
+
+.right span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.right .dep {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.right .exe {
+    margin-top: 5px;
+}
+
+.right .border {
+    border: 0.5px solid black;
+    width: 100px;
+}
+
+
+/* .cardiologists :nth-child(2) :nth-child(3) {
+    margin-top: -10px;
+} */
+
+.container .work-title {
+    margin-top: 6%;
+}
+
+.work-title h3 {
+    color: #37393d;
+    font-weight: 1000;
+    margin: 0;
+    border-bottom: 1px solid #cdcdcd;
+    display: block;
+    font-size: 2.10em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.work-title h3 span {
+    margin-left: 5px;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(58, 222, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftbar {
+    width: 30%;
+}
+
+.rightbar {
+    margin-left: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightbar a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    height: 35px;
+    text-decoration: none;
+    color: bkack;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.rightbar a:hover {
+    transition-delay: 1s;
+    /* box-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 40px red; */
+    /* text-shadow: 0 0 50px red; */
+}
+
+.rightbar a span {
+    position: absolute;
+    display: block;
+}
+
+.rightbar a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, black);
+}
+
+.rightbar a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.rightbar a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, black);
+}
+
+.rightbar a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+}

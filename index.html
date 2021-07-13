@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- font awsome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- start-smoth-scrolling-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+    <script type="text/javascript" src="js/reviews.js"></script>
+    <script type="text/javascript">
+    
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!--//end-smoth-scrolling-->
+</head>
+
+<body>
+    <!--Navigation-->
+    <div class="nav">
+        <div class="logomate">
+            <div class="leftbar">
+                <img src="images/hosplogo.jpg" alt="">
+            </div>
+            <div class="logohead">
+                <h2>Heaven's Care Hospital</h2>
+            </div>
+        </div>
+        <div class="rightbar" style="width: 55%;">
+            <a href="index.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Home</a>
+            <div class="navborder"></div>
+            <a href="COE.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Center of Execellence </a>
+            <div class="navborder"></div>
+            <a href="about.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> AboutUS </a>
+            <div class="navborder"></div>
+            <a href="emergency.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Emergency </a>
+            <div class="navborder"></div>
+            <a href="Logout.php"><span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> Login</a>
+        </div>
+    </div>
+
+
+    <!--slider-->
+    <div id="slider">
+        <div id="headerSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#headerSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#headerSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#headerSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/banner_1.jpg" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h5>WELCOME HERE</HERE>
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner_2.jpg" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h5>This is our project</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner_3.jpg" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h5>Hospital Manangement System</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cheaderSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#headerSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+        </div>
+    </div>
+
+    <!--About-->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Content</h2>
+                    <div class="about-content">
+                        When convincing your customer to choose you over the competition, always address them personally. The opening line from Greatist is probably the greatest example of this (sorry, we had to do that.) Seriously though, it works perfectly. This page hits
+                        on all levels. As a design firm, you would expect them to have great video and web design, and they hit it out of the park with each. Their mantra of “client as a partner” encapsulates how they will work with you if you hire them.
+                        Our favorite feature is the functional world clocks for each of their locations.
+                    </div>
+                    <button type="button" class="btn btn-primary">Read more</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/imghosp.jpg" alt="">
+                </div>
+            </div>
+    </section>
+
+    <!-----How it works---->
+    <section id="working">
+        <div class="container">
+            <h1>How it works</h1>
+            <div class="row working">
+                <div class="col-md-3 text-center">
+                    <h3>Step 1</h3>
+                    <p>A domain is the name of your website. It has to be unique and convey the brand of your business.The easiest way to search and register a domain is to go to a domain registrar</p>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <h3>Step 2</h3>
+                    <p>A domain is the name of your website. It has to be unique and convey the brand of your business.The easiest way to search and register a domain is to go to a domain registrar</p>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <h3>Step 3</h3>
+                    <p>A domain is the name of your website. It has to be unique and convey the brand of your business.The easiest way to search and register a domain is to go to a domain registrar</p>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <h3>Step 4</h3>
+                    <p>A domain is the name of your website. It has to be unique and convey the brand of your business.The easiest way to search and register a domain is to go to a domain registrar</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!---Reviews---->
+    <div class="reviews" onclick="window.location.href='indexreviews.php'">
+        <div class="small-container">
+            <h1 class="heading"> Add Reviews </h1>
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        The opening line from Greatist is probably the greatest example of this (sorry, we had to do that.) Seriously though, it works perfectly.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/cust1.png">
+                    <h3>Abc Zyx</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        The opening line from Greatist is probably the greatest example of this (sorry, we had to do that.) Seriously though, it works perfectly.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/cust2.jpg">
+                    <h3>Payal Gupta</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        The opening line from Greatist is probably the greatest example of this (sorry, we had to do that.) Seriously though, it works perfectly.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/cust3.jpg">
+                    <h3>Amruta sutar</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---About us---->
+
+    <section id="team">
+        <div class="container">
+            <h1>Our Team</h1>
+            <div class="row">
+                <div class="col-md-3 profile-pic text-center">
+                    <div class="img-box">
+                        <img src="images/img1.jpg" class="img-responsive">
+                        <ul>
+                            <a href="#">
+                                <l1><i class="fab fa-facebook"></i></l1>
+                            </a>
+                            <a href="#">
+                                <l1><i class="fab fa-twitter"></i></l1>
+                            </a>
+                            <a href="#">
+                                <l1><i class="fab fa-linkedin"></i></l1>
+                            </a>
+                        </ul>
+                    </div>
+                    <h2>Sashmita Mahapatro</h2>
+                    <h3>Founder/ CEO</h3>
+                    <p>A domain is the name of your website. It has to be unique and convey the brand of your business.</p>
+                </div>
+                <div class="col-md-3 profile-pic text-center">
+                    <div class="img-box">
+                        <img src="images/img16.jpg" class="img-responsive">
+                        <ul>
+                            <a href="#">
+                                <l1><i class="fab fa-facebook"></i></l1>
+                            </a>
+                            <a href="#">
+                                <l1><i class="fab fa-twitter"></i></l1>
+                            </a>
+                            <a href="#">
+                                <l1><i class="fab fa-linkedin"></i></l1>
+                            </a>
+                        </ul>
+                    </div>
+                    <h2>Payal Gupta</h2>
+                    <h3>Business Head</h3>
+                    <p>A domain is the name of your website. It has to be unique and convey the brand of your business.</p>
+                </div>
+                <div class="col-md-3 profile-pic text-center">
+                    <div class="img-box">
+                        <img src="images/img17.jpg" class="img-responsive">
+                        <ul>
+                            <a href="#">
+                                <l1><i class="fab fa-facebook"></i></l1>
+                            </a>
+                            <a href="#">
+                                <l1><i class="fab fa-twitter"></i></l1>
+                            </a>
+                            <a href="#">
+                                <l1><i class="fab fa-linkedin"></i></l1>
+                            </a>
+                        </ul>
+                    </div>
+                    <h2>Arifa Khan</h2>
+                    <h3>Manager</h3>
+                    <p>A domain is the name of your website. It has to be unique and convey the brand of your business.</p>
+                </div>
+                <div class="col-md-3 profile-pic text-center">
+                    <div class="img-box">
+                        <img src="images/img18.jpg" class="img-responsive">
+                        <ul>
+                            <a href="#">
+                                <l1><i class="fab fa-facebook"></i></l1>
+                            </a>
+                            <a href="#">
+                                <l1><i class="fab fa-twitter"></i></l1>
+                            </a>
+                            <a href="#">
+                                <l1><i class="fab fa-linkedin"></i></l1>
+                            </a>
+                        </ul>
+                    </div>
+                    <h2>Amruta Sutar</h2>
+                    <h3>Marketing Head</h3>
+                    <p>A domain is the name of your website. It has to be unique and convey the brand of your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---footer----->
+    <section id="footer">
+        <div class="container text-center">
+            <div class="title-text">
+                <p>Contact</p>
+                <h1>Book an appointment today</h1>
+            </div>
+            <div class="con">
+                <h3>Get in Touch</h3>
+                <p>#30,abc colony,xyz city IN<i class="fa fa-map-marker"></i></p>
+                <p>abc@gmail.com<i class="fa fa-paper-plane"></i></p>
+                <p>12323334455<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <hr>
+
+            <p>Copyright 2021 - GPM College</p>
+        </div>
+    </section>
+    <!--smooth-scrolling-of-move-up-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+            	containerID: 'toTop', // fading element id
+            	containerHoverID: 'toTopHover', // fading element hover id
+            	scrollSpeed: 1200,
+            	easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!--//smooth-scrolling-of-move-up-->
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/page1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Oncologist</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logomate">
+            <div class="leftbar">
+                <img src="images/hosplogo.jpg" alt="">
+            </div>
+            <div class="logohead">
+                <h2>Heaven's Care Hospital</h2>
+            </div>
+        </div>
+        <div class="rightbar">
+            <a href="index.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Home</a>
+            <div class="navborder">
+            </div>
+            <a href="about.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> About Us</a>
+            <div class="navborder"></div>
+            <a href="portfolio.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Portfolio</a>
+            <div class="navborder"></div>
+            <a href="contact.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Contact US </a>
+            <div class="navborder"></div>
+            <a href="emergency.html"><span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Emergency </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="work-title">
+            <h3>ONCOLOGISTS <span></span></h3>
+        </div>
+    </div>
+    <div class="cardiologists">
+        <div class="main">
+            <div class="bottom">
+                <div class="left">
+                    <div class="mdocimg">
+                        <img src="images/cardio.png" alt="" class="docimg">
+                    </div>
+                    <div class="appointbtn">
+                        <button onclick="window.location.href='Login.php'" class="cbtn">Appoint Me</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>Dr. Anand Tiwari</h3>
+                    <div class="border"></div>
+                    <div class="dep"><span>Department :</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eligendi</p>
+                    </div>
+                    <div class="border"></div>
+                    <div class="exe"><span>Expertise :</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eligendi maxime sint cumque, commodi optio accusamus cum officia enim sunt, qui quo quidem, assumenda atque culpa nostrum obcaecati consequatur quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="bottom">
+                <div class="left">
+                    <div class="mdocimg">
+                        <img src="images/cardio.png" alt="" class="docimg">
+                    </div>
+                    <div class="appointbtn">
+                        <button onclick="window.location.href='Login.php'" class="cbtn">Appoint Me</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>Dr. Sandeep Pawar</h3>
+                    <div class="border"></div>
+                    <div class="dep"><span>Department :</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eligendi</p>
+                    </div>
+                    <div class="border"></div>
+                    <div class="exe"><span>Expertise :</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eligendi maxime sint cumque, commodi optio accusamus cum officia enim sunt, qui quo quidem, assumenda atque culpa nostrum obcaecati consequatur quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="bottom">
+                <div class="left">
+                    <div class="mdocimg">
+                        <img src="images/cardio.png" alt="" class="docimg">
+                    </div>
+                    <div class="appointbtn">
+                        <button onclick="window.location.href='Login.php'" class="cbtn">Appoint Me</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>Dr. Poonam Rathod</h3>
+                    <div class="border"></div>
+                    <div class="dep"><span>Department :</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eligendi</p>
+                    </div>
+                    <div class="border"></div>
+                    <div class="exe"><span>Expertise :</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam eligendi maxime sint cumque, commodi optio accusamus cum officia enim sunt, qui quo quidem, assumenda atque culpa nostrum obcaecati consequatur quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            $(document).ready(function(){
+
+                $(document).on('click','.cbtn',function(){
+
+                    $.ajax({
+                        url:'logout_ajax_action.php',
+                        method:'POST',
+                        data:{page:'page',action:'logout'},
+                        success:function(data){
+
+                        }
+                    })
+
+                });
+
+            });
+
+        </script>
+
+</body>

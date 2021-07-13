@@ -1,0 +1,138 @@
+<!--
+Author: Anal Shah
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!--web-font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--//web-font-->
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- //Custom Theme files -->
+    <!-- js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!-- //js -->
+    <!-- start-smoth-scrolling-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!--//end-smoth-scrolling-->
+</head>
+
+<body>
+    <!--header-->
+    <div class="nav">
+        <div class="logomate">
+            <div class="leftbar">
+                <img src="images/hosplogo.jpg" alt="">
+            </div>
+            <div class="logohead">
+                <h2>Heaven's Care Hospital</h2>
+            </div>
+        </div>
+        <div class="rightbar">
+            <a href="index.html"><span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> Home</a>
+            <div class="navborder"></div>
+            <a href="contact.html"><span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> Contact Us</a>
+            <div class="navborder"></div>
+            <a href="Login.php"><span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>Login</a>
+        </div>
+    </div>
+    <!--//header-->
+    <!--about-->
+    <div class="about">
+        <div class="container">
+            <div class="work-title">
+                <h3>OUR<span>TEAM </span></h3>
+            </div>
+            <div class="about-team">
+                <div class="col-md-3 about-team-grids">
+                    <img src="images/img67.png" alt="" />
+                    <div class="team-text">
+                        <h4><a href="#">PAYAL GUPTA</a> FS18CO039</h4>
+                    </div>
+                </div>
+                <div class=" col-md-3 about-team-grids">
+                    <img src="images/img67.png" alt="" />
+                    <div class="team-text">
+                        <h4><a href="#">SASHMITA MAHAPATRO</a> FS18CO026</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 about-team-grids">
+                    <img src="images/img67.png" alt="" />
+                    <div class="team-text">
+                        <h4><a href="#">AMRUTA SUTAR</a> 800-934256</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 about-team-grids">
+                    <img src="images/img67.png" alt="" />
+                    <div class="team-text">
+                        <h4><a href="#">ARIFA KHAN</a> 800-934669</h4>
+                    </div>
+                </div>
+                
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--//about-->
+    <!--smooth-scrolling-of-move-up-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+            var defaults = {
+            	containerID: 'toTop', // fading element id
+            	containerHoverID: 'toTopHover', // fading element hover id
+            	scrollSpeed: 1200,
+            	easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!--//smooth-scrolling-of-move-up-->
+</body>
+
+</html>

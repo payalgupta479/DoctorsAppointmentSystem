@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(58, 222, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logomate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navborder {
+    border: .5px solid black;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.leftbar {
+    font-size: 18px;
+    width: 30%;
+}
+
+.leftbar img {
+    height: 80px;
+    width: 80px;
+}
+
+.rightbar {
+    margin-left: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rightbar a {
+    font-size: 20px;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    height: 35px;
+    text-decoration: none;
+    color: bkack;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.logomate .logohead h3 {
+    font-size: 30px;
+}
+
+.rightbar a:hover {
+    transition-delay: 1s;
+    /* box-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 40px red; */
+    /* text-shadow: 0 0 50px red; */
+}
+
+.rightbar a span {
+    position: absolute;
+    display: block;
+}
+
+.rightbar a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, black);
+}
+
+.rightbar a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.rightbar a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, black);
+}
+
+.rightbar a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+}
+
+.topmain {
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.top1 h1 {
+    color: black;
+    letter-spacing: 4px;
+    background: white;
+    position: relative;
+    animation: text 3s;
+}
+
+@keyframes text {
+    0% {
+        color: black;
+    }
+    30% {
+        letter-spacing: 8px;
+    }
+    85% {
+        letter-spacing: 4px;
+    }
+}
+
+.main {
+    background-color: rgb(58, 222, 203);
+    width: 80%;
+    margin-left: 10%;
+}
+
+.bottom {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.bottom .right h2 {
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.leftbar img {
+    height: 80px;
+    width: 80px;
+}
+
+.left {
+    width: 25%;
+    padding-top: 20px;
+}
+
+.left img {
+    height: 150px;
+    width: 200px;
+}
+
+.right {
+    width: 75%;
+    padding-top: 20px;
+}
+
+.right p {
+    font-size: 16px;
+}
+
+.left button {
+    padding: 5px;
+    margin-top: 10px;
+    background-color: floralwhite;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: none;
+    border: 1.5px solid black;
+}
+
+.left button:hover {
+    cursor: pointer;
+}
+
+.cardioimg {
+    display: flex;
+    justify-content: center;
+}
+
+.refercarbtn {
+    display: flex;
+    justify-content: center;
+}
+.cbtn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.container .work-title {
+    margin-top: 6%;
+}
+
+.work-title h3 {
+    color: #37393d;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0 0 .7em 0;
+    border-bottom: 1px solid #cdcdcd;
+    display: block;
+    font-size: 2.10em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.work-title h3 span {
+    margin-left: 5px;
+    letter-spacing: 0.5px;
+}
+
+.site {
+    margin-top: 60px;
+}
